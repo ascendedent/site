@@ -520,6 +520,12 @@ fbq('track', 'PageView');
             }
             
             form.addEventListener('submit', async function(e) {
+		    // Honeypot spam protection
+		if (form.querySelector('input[name="website"]').value !== '') {
+		  e.preventDefault(); // Stop form from submitting
+		  console.warn('Spam bot detected: honeypot triggered');
+		  return false;
+}
                 e.preventDefault();
                 
                 // Show loading state
