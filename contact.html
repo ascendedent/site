@@ -388,7 +388,13 @@ fbq('track', 'PageView');
                             <!-- Hidden fields for Formspree -->
                             <input type="hidden" name="_subject" value="New Contact Form Submission from Ascended Entertainment">
                             <input type="hidden" name="_next" value="thank-you.html">
-                            
+				
+			<!-- Honeypot Field (Anti-Spam Bot Trap) -->
+                            <div style="display: none;">
+  				<label for="website">Leave this field empty</label>
+  				<input type="text" id="website" name="website" autocomplete="off" tabindex="-1">
+			    </div>
+				
                           <div class="pt-4">
                                 <button id="submitBtn" class="px-9 py-4 bg-primary text-white text-[18px] xl:text-[20px] hover:bg-white hover:text-slate-900 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" type="submit">
                                     <span id="btnText">Send Message</span>
