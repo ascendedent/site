@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/favicon.ico">	
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- tailwind css file -->
+    <link rel="stylesheet" href="css/vedio_popup.css">
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="index.css">
+	
+	<link rel="alternate" href="https://ascendedentertainment.com/" hreflang="en-us">
+	<link rel="alternate" href="https://ascendedentertainment.com/contact.html" hreflang="en-us">
+	
+	<!-- Enhanced Meta Tags for Contact Page (contact.html) -->
+<!-- Place these in the <head> section of your contact.html -->
+
+<!-- Primary Meta Tags -->
+<title>Contact Ascended Entertainment - Get Your Free Creative Marketing Consultation</title>
+<meta name="description" content="Ready to transform your brand? Contact our award-winning creative marketing team for a free consultation. $350M+ in client revenue generated. Let's create something extraordinary together.">
+<meta name="keywords" content="contact ascended entertainment, creative marketing consultation, video production quote, film production contact, marketing agency contact, free consultation">
+<meta name="author" content="Ascended Entertainment">
+<meta name="robots" content="index, follow">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://ascendedent.com/contact.html">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Contact Ascended Entertainment - Free Creative Marketing Consultation">
+<meta property="og:description" content="Ready to bring your vision to life? Contact our award-winning team for cutting-edge marketing campaigns, video production, or narrative films.">
+<meta property="og:image" content="https://ascendedent.com/images/hero-content-right.png">
+<meta property="og:url" content="https://ascendedent.com/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ascended Entertainment">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact Ascended Entertainment - Free Creative Marketing Consultation">
+<meta name="twitter:description" content="Ready to transform your brand? Get in touch with our award-winning creative team today.">
+<meta name="twitter:image" content="https://ascendedent.com/images/hero-content-right.png">
+
+	<!-- Google Analytics 4 Setup for Ascended Entertainment -->
+<!-- Place this code in the <head> section of all pages, before any other scripts -->
+
+<!-- Google Analytics 4 Global Site Tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJPNM12FS0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Configure GA4 with your measurement ID
+  gtag('config', 'G-JJPNM12FS0', {
+    page_title: document.title,
+    page_location: window.location.href,
+    site_name: 'Ascended Entertainment'
+  });
+
+  // Enhanced measurement events for Ascended Entertainment
+  
+  // Video interaction tracking
+  gtag('event', 'video_view', {
+    event_category: 'engagement',
+    event_label: 'creative_reel',
+    video_title: 'Ascended Entertainment Creative Reel'
+  });
+
+  // Contact form tracking
+  gtag('event', 'contact_form_view', {
+    event_category: 'lead_generation',
+    event_label: 'contact_form_impression'
+  });
+
+  // Service interest tracking
+  gtag('event', 'service_view', {
+    event_category: 'engagement',
+    event_label: 'services_section'
+  });
+
+  // Portfolio interaction tracking
+  gtag('event', 'portfolio_view', {
+    event_category: 'engagement', 
+    event_label: 'portfolio_section'
+  });
+
+  // CTA button tracking
+  gtag('event', 'cta_click', {
+    event_category: 'conversion',
+    event_label: 'get_started_button'
+  });
+</script>
+
+<!-- Enhanced Event Tracking Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Track video play button clicks
+  const playButton = document.getElementById('playButton');
+  if (playButton) {
+    playButton.addEventListener('click', function() {
+      gtag('event', 'video_play', {
+        event_category: 'video_engagement',
+        event_label: 'creative_reel_play',
+        video_title: 'Ascended Entertainment Creative Reel'
+      });
+    });
+  }
+
+  // Track contact form submissions
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function() {
+      gtag('event', 'form_submit', {
+        event_category: 'lead_generation',
+        event_label: 'contact_form_submission',
+        value: 1
+      });
+    });
+  }
+
+  // Track CTA button clicks
+  const ctaButtons = document.querySelectorAll('a[href="#contact"], a[href="contact.html"]');
+  ctaButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      gtag('event', 'cta_click', {
+        event_category: 'conversion_intent',
+        event_label: 'contact_cta_click',
+        button_text: this.textContent.trim()
+      });
+    });
+  });
+
+  // Track talent form popup
+  const talentFormButton = document.getElementById('openTalentForm');
+  if (talentFormButton) {
+    talentFormButton.addEventListener('click', function() {
+      gtag('event', 'talent_form_open', {
+        event_category: 'lead_generation',
+        event_label: 'talent_application_interest'
+      });
+    });
+  }
+
+  // Track email link clicks
+  const emailLinks = document.querySelectorAll('a[href*="jmarotta@ascendedent.com"]');
+  emailLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'email_click', {
+        event_category: 'contact_intent',
+        event_label: 'email_link_click'
+      });
+    });
+  });
+
+  // Track section scrolling for engagement
+  const sections = ['#home', '#about', '#services', '#portfolio', '#contact'];
+  sections.forEach(function(section) {
+    const element = document.querySelector(section);
+    if (element) {
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            gtag('event', 'section_view', {
+              event_category: 'page_engagement',
+              event_label: section.replace('#', '') + '_section_view'
+            });
+          }
+        });
+      }, { threshold: 0.5 });
+      observer.observe(element);
+    }
+  });
+
+  // Track portfolio read more clicks
+  const portfolioReadMore = document.querySelectorAll('#portfolio a[href="#contact"]');
+  portfolioReadMore.forEach(function(link) {
+    link.addEventListener('click', function() {
+      gtag('event', 'portfolio_read_more', {
+        event_category: 'engagement',
+        event_label: 'portfolio_cta_click'
+      });
+    });
+  });
+});
+</script>
+
+<!-- Google Tag Manager (Optional - Alternative to GA4) -->
+<!-- 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+
+<!-- Facebook Pixel (Optional) -->
+<!--
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'YOUR_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+-->
+<!-- Contact-Specific Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Ascended Entertainment",
+  "description": "Contact form and information for Ascended Entertainment creative marketing and film production services",
+  "url": "https://ascendedent.com/contact.html",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Ascended Entertainment",
+    "email": "jmarotta@ascendedent.com",
+    "url": "https://ascendedent.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "jmarotta@ascendedent.com",
+      "contactType": "Customer Service",
+      "availableLanguage": "English"
+    }
+  }
+}
+</script>	
+</head>
+	
+<body class="font-poppins bg-[#161616] text-[#ececec]">
+
+    <header class="py-5 lg:py-7 xl:py-10">
+        <div class="container">
+            <div class="grid grid-cols-12 items-center">
+                <div class="col-span-6 xl:col-span-4">
+                    <a href="#" class="flex items-center gap-2">
+                        <img src="images/logo.png" alt="Ascended Entertainment Logo">
+                        <span class="text-[19px] lg:text-[20px] xl:text-[21px]">Ascended Entertainment</span>
+                    </a>
+                </div>
+                <div class="col-span-6 hidden xl:block">
+                    <ul class="flex justify-center gap-7 xl:gap-8 xxl:gap-10">
+                        <li><a class="hover:text-primary/80 transition duration-200 lg:text-[17px]" href="index.html">Home</a></li>
+						<li><a class="hover:text-primary/80 transition duration-200 lg:text-[17px]" href="index.html#about">About Us</a></li>
+						<li><a class="hover:text-primary/80 transition duration-200 lg:text-[17px]" href="index.html#services">Services</a></li>
+						<li><a class="hover:text-primary/80 transition duration-200 lg:text-[17px]" href="index.html#portfolio">Portfolio</a></li>
+
+                        <li><a class="text-primary hover:text-primary/80 transition duration-200 lg:text-[17px]" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-span-6 xl:col-span-2 flex justify-end">
+                    <div id="openMenu" class="cursor-pointer">
+                        <img class="w-10" src="images/humberger-menu.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Offcanvas Menu from Right -->
+    <div id="offcanvas"
+        class="fixed top-0 right-0 w-78 xl:w-85 h-full bg-gray-800 text-white transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex justify-between items-center p-4 border-b border-gray-700">
+            <h2 class="text-lg font-semibold">Menu</h2>
+            <button id="closeMenu" class="text-2xl leading-none cursor-pointer">×</button>
+        </div>
+        <nav class="p-4">
+            <ul class="space-y-5">
+                <li><a href="index.html" class="block hover:text-primary transition duration-200">Home</a></li>
+				<li><a href="index.html#about" class="block hover:text-primary transition duration-200">About Us</a></li>
+				<li><a href="index.html#services" class="block hover:text-primary transition duration-200">Services</a></li>
+				<li><a href="index.html#portfolio" class="block hover:text-primary transition duration-200">Portfolio</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black/50 z-40 hidden"></div>
+
+    <!-- Contact Hero Section -->
+    <section class="pt-5 md:pt-10 xl:pt-15 pb-11 md:pb-20 xl:pb-28">
+        <div class="container">
+            <div class="text-center">
+                <div class="flex gap-[10px] justify-center pb-6">
+                    <div>
+                        <img src="images/red-arrow.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-[#DC0202] text-[18px] md:text-[20px]">GET IN TOUCH</p>
+                    </div>
+                    <div>
+                        <img class="transform rotate-y-180" src="images/red-arrow.png" alt="">
+                    </div>
+                </div>
+                <h1 class="text-[35px] md:text-[45px] xl:text-[65px] xxl:text-[80px] leading-[120%] pb-6 lg:pb-8">Let's Create Something <br> Extraordinary Together</h1>
+                <p class="text-[#babdc2] max-w-3xl mx-auto text-[18px] xl:text-[20px]">Ready to bring your vision to life? Whether you need cutting-edge marketing campaigns, stunning video production, or award-winning narrative films, our team is here to make it happen. Let's discuss your project and transform your ideas into reality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (initially hidden) -->
+    <div id="successMessage" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 hidden">
+        <div class="flex items-center gap-3">
+            <i class="fa fa-check-circle text-xl"></i>
+            <span>Message sent successfully! We'll get back to you soon.</span>
+        </div>
+    </div>
+
+    <!-- Error Message (initially hidden) -->
+    <div id="errorMessage" class="fixed top-4 right-4 bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg z-50 hidden">
+        <div class="flex items-center gap-3">
+            <i class="fa fa-exclamation-circle text-xl"></i>
+            <span>There was an error sending your message. Please try again.</span>
+        </div>
+    </div>
+
+<!-- Contact Form & Info Section -->
+    <section class="pb-11 md:pb-20 xl:pb-28">
+        <div class="container">
+            <div class="xl:grid grid-cols-12 gap-8 xl:gap-12 xxl:gap-15">
+                <!-- Contact Form -->
+                <div class="xl:col-span-8">
+                    <div class="bg-[#464a4f] py-8 xl:py-11 xxl:py-16 px-6 xl:px-10 xxl:px-14">
+                        <h2 class="text-[30px] xl:text-[40px] text-[#ececec] mb-8">Send Us a Message</h2>
+                        <form id="contactForm" action="https://formspree.io/f/mjkrakok" method="POST" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-[#ececec] text-[16px] mb-2" for="firstName">First Name *</label>
+                                    <input class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div>
+                                    <label class="block text-[#ececec] text-[16px] mb-2" for="lastName">Last Name *</label>
+                                    <input class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-[#ececec] text-[16px] mb-2" for="email">Email Address *</label>
+                                    <input class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" type="email" id="email" name="_replyto" required>
+                                </div>
+                                <div>
+                                    <label class="block text-[#ececec] text-[16px] mb-2" for="phone">Phone Number</label>
+                                    <input class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-[#ececec] text-[16px] mb-2" for="company">Company/Organization</label>
+                                <input class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" type="text" id="company" name="company">
+                            </div>
+                            <div>
+                                <label class="block text-[#ececec] text-[16px] mb-2" for="service">Service Interest</label>
+                                <select class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" id="service" name="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="video-production">Video Production</option>
+                                    <option value="creative-direction">Creative Direction</option>
+                                    <option value="marketing">Direct Response Marketing</option>
+                                    <option value="copywriting">Copywriting</option>
+                                    <option value="narrative-film">Narrative Film Production</option>
+                                    <option value="consultation">Consultation</option>
+                                    <option value="analytics">Data Metric Analytics</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[#ececec] text-[16px] mb-2" for="budget">Project Budget Range</label>
+                                <select class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300" id="budget" name="budget">
+                                    <option value="">Select budget range...</option>
+                                    <option value="under-10k">Under $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-50k">$25,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="100k-plus">$100,000+</option>
+                                    <option value="discuss">Let's Discuss</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-[#ececec] text-[16px] mb-2" for="message">Project Details *</label>
+                                <textarea class="w-full px-4 py-3 bg-[#161616] border border-[#87898c] text-[#ececec] focus:border-primary focus:outline-none transition duration-300 h-32 resize-vertical" id="message" name="message" placeholder="Tell us about your project, goals, timeline, and any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <!-- Hidden fields for Formspree -->
+                            <input type="hidden" name="_subject" value="New Contact Form Submission from Ascended Entertainment">
+                            <input type="hidden" name="_next" value="thank-you.html">
+                            
+                          <div class="pt-4">
+                                <button id="submitBtn" class="px-9 py-4 bg-primary text-white text-[18px] xl:text-[20px] hover:bg-white hover:text-slate-900 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" type="submit">
+                                    <span id="btnText">Send Message</span>
+                            </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="xl:col-span-4 pt-8 xl:pt-0">
+                    <div class="space-y-8">
+                        <!-- Response Time -->
+                        <div class="bg-primary py-6 xl:py-8 px-6 xl:px-10 text-center">
+                            <h3 class="text-[#0c111b] text-[24px] xl:text-[28px] font-bold mb-3">Get in Touch</h3>
+                            <p class="text-[#0c111b] text-[16px]">Fill out the contact form and tell us what we can help you with! <br><br>We will reach out to schedule a consultation as soon as possible!</p>
+                      </div>
+
+                        <!-- Social Links -->
+                        <div class="bg-[#464a4f] py-6 xl:py-8 px-6 xl:px-10 text-center">
+                            <h3 class="text-[#ececec] text-[20px] mb-4">Follow Our Journey</h3>
+                            <ul class="flex justify-center gap-6">
+                                <li><a class="text-[24px] text-[#ececec] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a class="text-[24px] text-[#ececec] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a class="text-[24px] text-[#ececec] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a class="text-[24px] text-[#ececec] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            </ul>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <!-- CTA Section -->
+    <section class="pb-11 md:pb-20 xl:pb-28">
+        <div class="container"> </div>
+    </section>
+
+    <!-- footer area -->
+    <footer class="bg-[#464a4f] pt-[45px] xl:pt-[65px] xxl:pt-[70px]">
+        <div class="container">
+            <div class="xl:grid grid-cols-12">
+                <div class="col-span-7 flex flex-col gap-7 xl:gap-10">
+                    <div> </div>
+                    <div>
+                        <p class="text-[#ececec]">No matter your project size or budget, you will be <br> glad you talked to us last, and regret not talking to us first.</p>
+                    </div>
+                    <div>
+                        <a class="inline-block px-9 py-3 bg-primary text-white text-[18px] xl:text-[20px] hover:bg-white hover:text-slate-900 transition duration-300" href="#" >Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-span-5 grid grid-cols-3 pt-10 xl:pt-0">
+<div class="flex justify-start xl:justify-end">
+            <div>
+                            <h3 class="text-[20px] xl:text-[22px] pb-4 xl:pb-6">Resources</h3>
+                            <ul>
+                                <li><a class="hover:text-primary mb-4 block transition duration-300" href="blog.html">Blog</a></li>
+                                <li><a class="hover:text-primary mb-4 block transition duration-300" href="events.html">Events</a></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sub footer -->
+            <div class="lg:grid flex flex-col grid-cols-12 items-center mt-9 xl:mt-13 py-7 xl:py-10 border-t border-[#87898c]">
+                 <div class="col-span-3">
+                    <a href="#" class="flex justify-center lg:justify-start items-center gap-2">
+                        <img class="rounded-full" src="images/logo.png" alt="">
+                        <span class="text-[19px] lg:text-[20px] xl:text-[21px]">Ascended Entertainment</span>
+                    </a>
+                </div>
+                 <div class="col-span-6 pb-0 sm:py-5 lg:py-0 order-3 lg:order-2">
+                   <div class="w-full text-center">
+                        <p>Copyright © Ascended Entertainment LLC All rights reserved</p>
+                   </div>
+                </div>
+                 <div class="col-span-3 order-2 lg:order-3 py-4 sm:py-0">
+                    <ul class="flex justify-center lg:justify-end gap-7">
+                        <li><a class="text-[22px] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a class="text-[22px] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="text-[22px] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a class="text-[22px] hover:text-primary transition duration-300" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area -->
+
+    <!-- Main jQuery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/vedio_popup.js"></script>
+    
+    <!-- Custom jQuery -->
+    <script src="js/scripts.js"></script>
+
+    <!-- Formspree Contact Form JavaScript -->
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('btnText');
+            const btnSpinner = document.getElementById('btnSpinner');
+            const successMessage = document.getElementById('successMessage');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Function to reset button state
+            function resetButton() {
+                submitBtn.disabled = false;
+                btnText.textContent = 'Send Message';
+                btnSpinner.classList.add('hidden');
+            }
+            
+            // Function to show loading state
+            function showLoading() {
+                submitBtn.disabled = true;
+                btnText.textContent = 'Sending...';
+                btnSpinner.classList.remove('hidden');
+            }
+            
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                showLoading();
+                
+                // Get form data
+                const formData = new FormData(this);
+                
+                try {
+                    // Submit to Formspree
+                    const response = await fetch(this.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    
+                    if (response.ok) {
+                        // Success
+                        successMessage.classList.remove('hidden');
+                        form.reset();
+                        setTimeout(() => {
+                            successMessage.classList.add('hidden');
+                        }, 7000);
+                    } else {
+                        // Handle HTTP errors
+                        const errorData = await response.json();
+                        throw new Error(errorData.error || 'Failed to send message');
+                    }
+                    
+                } catch (error) {
+                    // Handle network errors or other issues
+                    console.error('Form submission error:', error);
+                    errorMessage.classList.remove('hidden');
+                    setTimeout(() => {
+                        errorMessage.classList.add('hidden');
+                    }, 7000);
+                }
+                
+                // Always reset button state
+                resetButton();
+            });
+        });
+    </script>
+    
+</body>
+</html>

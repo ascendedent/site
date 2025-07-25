@@ -1,0 +1,26 @@
+/*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Now all other CSS rules */
+body { margin: 0; }
+
+h1,
+h2, 
+h3,
+h4,
+h5,
+h6 {
+   font-family: "Almarai", sans-serif; 
+}
+
+
+.token-grid {
+  background: linear-gradient(to right, transparent 30%, #36373b 30%);
+}
+
+@media screen and (max-width: 1199px) {
+.token-grid {
+   background-color: #36373b;
+}
+}
+

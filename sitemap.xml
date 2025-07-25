@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        
+    <!-- Homepage -->
+    <url>
+        <loc>https://ascendedent.com/</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/hero-content-right.png</image:loc>
+            <image:title>Ascended Entertainment Creative Excellence</image:title>
+            <image:caption>From Concept to Completion - Award-winning creativity meets marketing innovation</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/logo.png</image:loc>
+            <image:title>Ascended Entertainment Logo</image:title>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://ascendedent.com/images/play-bottuon.png</video:thumbnail_loc>
+            <video:title>Ascended Entertainment Creative Reel - Committed to Creative Brilliance</video:title>
+            <video:description>Award-winning creativity meets marketing innovation. Showcasing our narrative and social media-driven content expertise.</video:description>
+            <video:content_loc>https://s3.us-east-1.amazonaws.com/ascendedent.com/Videos/Ascended_Reel.mp4</video:content_loc>
+            <video:duration>120</video:duration>
+            <video:publication_date>2025-06-23</video:publication_date>
+        </video:video>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://ascendedent.com/contact.html</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Home Sections (anchored URLs) -->
+    <url>
+        <loc>https://ascendedent.com/#home</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://ascendedent.com/#about</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://ascendedent.com/#services</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/services-img.png</image:loc>
+            <image:title>Data Metric Analytics Service</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/services-img2.png</image:loc>
+            <image:title>Creative Direction Service</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/services-img3.png</image:loc>
+            <image:title>Video Production Service</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/services-img4.png</image:loc>
+            <image:title>Consultation Service</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/services-img5.png</image:loc>
+            <image:title>Copywriting Service</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/services-img6.png</image:loc>
+            <image:title>Narrative Film Production Service</image:title>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://ascendedent.com/#portfolio</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/portfolio-01.png</image:loc>
+            <image:title>Prepared Hero - Strategic Innovation Showcase</image:title>
+            <image:caption>Targeted campaigns driving urgent engagement and conversions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/portfolio-02.png</image:loc>
+            <image:title>HIM - Award Winning Producorial Debut</image:title>
+            <image:caption>Six minute runtime, less than $1000 budget, 3 Awards, 3 Finalist picks, 10 official film festival selections</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://ascendedent.com/images/portfolio-03.png</image:loc>
+            <image:title>Our Team - Proven Expertise, Exceptional Results</image:title>
+            <image:caption>Over 100 brands propelled, $50 million in added revenue</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://ascendedent.com/#contact</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Alternative domain -->
+    <url>
+        <loc>https://ascendedentertainment.com/</loc>
+        <lastmod>2025-06-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+</urlset>
